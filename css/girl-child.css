@@ -1,0 +1,236 @@
+    @font-face {
+        font-family: 'Gilroy-Medium';
+        src: url('/section11/fonts/Gilroy-Medium.ttf') format('truetype');
+    }
+    
+     :root {
+        --body: hsl(222, 47%, 11%);
+        --dark-blue: hsl(232, 59%, 10%);
+        --text-blue: hsl(233, 24%, 19%);
+        --white-color: hsl(0, 0%, 100%);
+        --flutterwave-color: hsl(30, 96%, 57%);
+        --disable-btn: hsl(0, 0%, 93%);
+        --btn-padding: 0.9375rem 1.875rem;
+        --border-radius: 0.625rem;
+        --font-header: 'Gilroy-Medium', sans-serif;
+    }
+    /* Box sizing rules */
+    
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Remove default margin */
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+    /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+    
+    ul[role="list"],
+    ol[role="list"] {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    /* Set core root defaults */
+    
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+    
+    html {
+        font-family: 'Gilroy-Medium';
+        -webkit-font-smoothing: antialiased;
+        box-sizing: inherit;
+    }
+    /* Set core body defaults */
+    
+    body {
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+    /* A elements that don't have a class get default styles */
+    
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+    /* Make images easier to work with */
+    
+    img,
+    picture {
+        max-width: 100%;
+        display: block;
+    }
+    /* Inherit fonts for inputs and buttons */
+    
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+    /* Remove all animations and transitions for people that prefer not to see them */
+    
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+    /* ==========GLOBAL STYLES=========== */
+    
+    .header {
+        width: 100%;
+        max-width: 72.8125rem;
+        margin: 0 auto;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .btn {
+        padding: 1rem 2.5rem;
+        border-radius: 0.625rem;
+        font-weight: 500;
+    }
+    
+    .btn--disabled {
+        background-color: var(--disable-btn);
+        color: var(--text-blue);
+        transition: all .3s;
+    }
+    
+    .btn--disabled:hover {
+        background-color: var(--flutterwave-color);
+        color: var(--white-color);
+    }
+    
+    .btn--primary {
+        background-color: var(--flutterwave-color);
+        color: var(--white-color);
+    }
+    
+    .btn--outline {
+        border: thin solid hsl(240, 93%, 30%);
+    }
+    /* ===========MAIN STYLE=========== */
+    
+    .details {
+        background-color: purple;
+        margin: 40px;
+        padding: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    
+    span {
+        padding: 10px;
+    }
+    
+    .contact-details {
+        color: white;
+        padding: 40px;
+    }
+    
+    .handles li {
+        width: 30px;
+        height: 23px;
+        display: flex;
+        display: inline-block;
+        align-items: center;
+        margin-left: 10px;
+        gap: 2rem;
+    }
+    
+    .logo {
+        width: 4rem;
+        margin-left: 5rem;
+    }
+    
+    .nav,
+    .nav-list {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav {
+        padding: 1.25rem 0;
+    }
+    
+    .nav .nav-list li {
+        margin-left: 2rem;
+    }
+    
+    .nav-list li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav .nav-list li a span svg {
+        width: 2rem;
+        font-weight: bold;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 26rem;
+        text-transform: uppercase;
+    }
+    /* ==========MAIN BODY=============== */
+    
+    .first-images {
+        position: absolute;
+        right: 35rem;
+        margin: 5rem;
+    }
+    
+    .image1 {
+        position: relative;
+        left: 40rem;
+        align-items: center;
+        width: 47rem;
+        height: 25rem;
+        object-fit: cover;
+    }
+    
+    .f-h2 {
+        text-transform: uppercase;
+        position: relative;
+        left: 10rem;
+        bottom: 22rem;
+        color: hsl(331, 57%, 32%);
+    }
